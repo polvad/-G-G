@@ -1,9 +1,99 @@
 @font-face {
-    font-family: "$";
+    font-family: "FiraSans";
     src:
-        url($.woff) format("woff2"),
-        url($.woff) format("woff");
-    font-weight: bold;
+        url("../fonts/FiraSans-Regular.woff2") format("woff2"),
+        url("../fonts/FiraSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FiraSans";
+    src:
+        url("../fonts/FiraSansMedium.woff2") format("woff2"),
+        url("../fonts/FiraSansMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src:
+        url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+        url("../fonts/Gilroy-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src:
+        url("../fonts/FiraSansMedium.woff2") format("woff2"),
+        url("../fonts/FiraSansMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src:
+        url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+        url("../fonts/Gilroy-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GothamPro";
+    src:
+        url("../fonts/GothamPro-Black.woff2") format("woff2"),
+        url("../fonts/GothamPro-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GothamPro";
+    src:
+        url("../fonts/GothamPro-Bold.woff2") format("woff2"),
+        url("../fonts/GothamPro-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GothamPro";
+    src:
+        url("../fonts/GothamPro-Medium.woff2") format("woff2"),
+        url("../fonts/GothamPro-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "GothamPro";
+    src:
+        url("../fonts/GothamPro-Regular.woff2") format("woff2"),
+        url("../fonts/GothamPro-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Permian";
+    src:
+        url("../fonts/PermianSlabSerifTypeface-Bold.woff2") format("woff2"),
+        url("../fonts/PermianSlabSerifTypeface-Bold.woff") format("woff");
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }

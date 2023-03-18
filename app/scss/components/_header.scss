@@ -1,0 +1,217 @@
+.header {
+    background-color: $main-clr;
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        padding: 30px 0;
+    }
+
+    &__left {
+        display: flex;
+        justify-content: space-between;
+        gap: 135px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 36px;
+        row-gap: 10px;
+    }
+
+    &__menu-link {
+        color: $white;
+
+        &:hover {
+            color: $brown-100;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 67px;
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+        column-gap: 66px;
+    }
+
+    &__tel {
+        flex-shrink: 0;
+        font-family: $font-title;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__tel-icon {
+        display: none;
+        fill: $white;
+    }
+
+    &__catalog-link {
+        position: relative;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        color: $white;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+        background-color: $brown-500;
+        padding: 12px 29px;
+
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        &::before {
+            top: -5px;
+            right: 10px;
+            width: 34px;
+            height: 3px;
+            background-image: url('../images/btn-line1.png');
+        }
+
+        &::after {
+            bottom: -5px;
+            left: 17px;
+            width: 65px;
+            height: 2px;
+            background-image: url('../images/btn-line2.png');
+        }
+    }
+
+
+
+    &__burger-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 1300px) {
+    .header {
+        &__left {
+            gap: 60px;
+        }
+
+        &__right {
+            gap: 40px
+        }
+
+        &__contact {
+            flex-direction: column-reverse;
+            row-gap: 10px;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .header {
+        &__inner {
+            gap: 0;
+            padding: 20px 0;
+        }
+
+        &__left {
+            gap: 0;
+        }
+
+        &__menu {
+            display: none;
+        }
+
+        &__right {
+            flex-grow: 1;
+            gap: 0;
+        }
+
+        &__contact {
+            flex-direction: row;
+            gap: 10px;
+            order: 1;
+        }
+
+        &__email {
+            display: none;
+        }
+
+        &__tel {
+            padding: 8px;
+        }
+
+        &__tel-num {
+            display: none;
+        }
+
+        &__tel-icon {
+            display: block;
+        }
+
+        &__burger-btn {
+            display: block;
+            position: relative;
+            width: 40px;
+            height: 40px;
+
+            &::after,
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 24px;
+                height: 2px;
+                background-color: $white;
+                transition: transform 0.6s;
+            }
+
+            &::before {
+                transform: translate(-50%, 5px);
+            }
+
+            &::after {
+                transform: translate(-50%, -5px);
+            }
+
+            &.open {
+                &::before {
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+
+                &::after {
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+        }
+
+        &__catalog-link {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .header {
+        &__inner {
+            padding: 15px 0;
+        }
+
+        &__catalog-link {
+            padding: 6px 19px;
+        }
+    }
+}

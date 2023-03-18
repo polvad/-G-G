@@ -1,5 +1,7 @@
-html {
+html,
+body {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -45,6 +47,8 @@ blockquote {
 
 a {
   text-decoration: none;
+  color: inherit;
+  font-family: inherit;
   color: inherit;
 }
 
