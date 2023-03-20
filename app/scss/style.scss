@@ -1,13 +1,14 @@
 @import 'reset';
 @import 'fonts';
+@import 'libs';
 @import 'vars';
 @import 'global';
-
 
 @import './components/header';
 
 @import './components/hero';
 @import './components/services';
+@import './components/showcase';
 
 
 
@@ -15,4 +16,3 @@
 @import './components/footer';
 
 @import './components/mobile-menu';
-
