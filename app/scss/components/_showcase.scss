@@ -37,6 +37,7 @@
 .card-product {
     padding: 20px;
     border: 1px solid $gray-400;
+    transition: border 0.5s;
 
     &:hover {
         border: 1px solid $gray-600;
@@ -172,10 +173,17 @@
 
 @media(max-width: 576px) {
     .showcase {
+
         &__item-product {
             &:nth-child(n + 5) {
                 display: none;
             }
+
+            &.show {
+                display: block;
+            }
         }
+
+
     }
 }
