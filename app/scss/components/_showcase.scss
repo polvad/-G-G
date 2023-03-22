@@ -29,6 +29,8 @@
     }
 
     &__btn-all {
+        display: block;
+        text-align: center;
         width: 100%;
         font-weight: 700;
     }
@@ -179,9 +181,6 @@
                 display: none;
             }
 
-            &.show {
-                display: block;
-            }
         }
 
 

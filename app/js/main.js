@@ -15,16 +15,6 @@ const swiper = new Swiper('.card-product__slider', {
 
 });
 
-const caseBtn = document.querySelector('.showcase__btn-all');
-
-caseBtn.addEventListener('click', function () {
-    const showList = document.querySelector('.showcase__list-product')
-    const itemCard = document.querySelectorAll('.showcase__item-product');
-    itemCard.forEach(item => item.classList.toggle('show'));
-
-    this.remove()
-})
-
 const fieldAdvice = document.querySelectorAll('.form-advice__field');
 
 fieldAdvice.forEach(item => item.addEventListener('input', hint))
