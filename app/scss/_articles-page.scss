@@ -1,0 +1,39 @@
+.articles {
+    padding: 50px 0 90px;
+
+    .breadcramb {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 40px;
+        margin-bottom: 40px;
+    }
+
+    &__btn-all {
+        display: block;
+        font-weight: 700;
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .articles {
+        padding: 30px 0 60px;
+
+        &__list {
+            grid-gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        &__btn-all {
+            padding: 15px;
+        }
+    }
+}
