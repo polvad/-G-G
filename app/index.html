@@ -31,7 +31,7 @@
                         <a class="header__menu-link" href="#">О нас</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Контакты</a>
+                        <a class="header__menu-link @menu-link-contact" href="./contacts.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -446,13 +446,13 @@
                 <p class="advice__text">Наши специалисты с радостью помогут Вам, оставьте свой номер телефона!</p>
                 <form class="form-advice" action="#">
                     <div class="form-advice__row">
-                        <label class="form-advice__label">
-                            <input class="form-advice__field" type="text" required>
-                            <span class="form-advice__hint">Как вас зовут?</span>
+                        <label class="form-advice__label field">
+                            <input class="form-advice__field field__input" type="text" required>
+                            <span class="form-advice__hint field__hint">Как вас зовут?</span>
                         </label>
-                        <label class="form-advice__label">
-                            <input class="form-advice__field" type="tel" required>
-                            <span class="form-advice__hint">Ваш телефон</span>
+                        <label class="form-advice__label field">
+                            <input class="form-advice__field field__input" type="tel" required>
+                            <span class="form-advice__hint field__hint">Ваш телефон</span>
                         </label>
                     </div>
                     <button class="form-advice__btn btn-brown" type="submit">Связаться с нами</button>
@@ -652,33 +652,36 @@
                     <a class="footer__link-email" href="mailto:support@sofiadoors.com">support@sofiadoors.com</a>
                 </div>
                 <nav class="footer__nav">
-                    <a class="footer__link" href="#" target="_blank">Межкомнатные двери</a>
-                    <a class="footer__link" href="#" target="_blank">Мебель</a>
-                    <a class="footer__link" href="#" target="_blank">Стеновые панели «Буазери»</a>
-                    <a class="footer__link" href="#" target="_blank">Лестницы</a>
-                    <a class="footer__link" href="#" target="_blank">Мебельные фасады</a>
-                    <a class="footer__link" href="#" target="_blank">Доставка</a>
-                    <a class="footer__link" href="#" target="_blank">Статьи</a>
-                    <a class="footer__link" href="#" target="_blank">О нас</a>
-                    <a class="footer__link" href="#" target="_blank">Политика конфиденциальности</a>
+                    <a class="footer__link" href="#">Межкомнатные двери</a>
+                    <a class="footer__link" href="#">Мебель</a>
+                    <a class="footer__link" href="#">Стеновые панели «Буазери»</a>
+                    <a class="footer__link" href="#">Лестницы</a>
+                    <a class="footer__link" href="#">Мебельные фасады</a>
+                    <a class="footer__link" href="#">Доставка</a>
+                    <a class="footer__link" href="#">Статьи</a>
+                    <a class="footer__link" href="#">О нас</a>
+                    <a class="footer__link" href="./contacts.html">Контакты</a>
+                    <a class="footer__link" href="#">Политика конфиденциальности</a>
                 </nav>
-                <div class="footer__messager">
-                    <a class="footer__messager-link" href="#">
-                        <svg class="footer__messager-icon" width="18" height="10">
+
+                <div class="footer__messager messager">
+                    <a class="footer__messager-link messager__link" href="#">
+                        <svg class="footer__messager-icon messager__icon" width="18" height="10">
                             <use xlink:href="./images/sprite.svg#icon-vk"></use>
                         </svg>
                     </a>
-                    <a class="footer__messager-link" href="#">
-                        <svg class="footer__messager-icon" width="19" height="19">
+                    <a class="footer__messager-link messager__link" href="#">
+                        <svg class="footer__messager-icon messager__icon" width="19" height="19">
                             <use xlink:href="./images/sprite.svg#icon-pinterest"></use>
                         </svg>
                     </a>
-                    <a class="footer__messager-link" href="#">
-                        <svg class="footer__messager-icon" width="20" height="18">
+                    <a class="footer__messager-link messager__link" href="#">
+                        <svg class="footer__messager-icon messager__icon" width="20" height="18">
                             <use xlink:href="./images/sprite.svg#icon-telegram"></use>
                         </svg>
                     </a>
                 </div>
+
             </div>
         </div>
     </div>
@@ -689,7 +692,7 @@
         <a class="menu__item" href="#">Доставка </a>
         <a class="menu__item" href="#">Статьи </a>
         <a class="menu__item" href="#">О нас</a>
-        <a class="menu__item" href="#">Контакты</a>
+        <a class="menu__item" href="./contacts.html">Контакты</a>
     </nav>
     <div class="menu__contacts">
         <a class="menu__tel link-contact" href="tel:88005508179">8 (800) 550-81-79</a>

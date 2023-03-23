@@ -142,6 +142,70 @@ body {
 
 }
 
+.messager {
+
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #505050;
+        border-radius: 50%;
+
+        &:hover {
+            .messager__icon {
+                fill: $brown-100;
+            }
+        }
+    }
+
+    &__icon {
+        transition: fill 0.6s;
+    }
+}
+
+.field {
+    position: relative;
+
+    &__input {
+        width: 100%;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        padding: 19px 16px;
+        background-color: $white;
+        outline: 1px solid transparent;
+
+        transition: outline 0.5s;
+
+        &:hover {
+            outline: 1px solid $gray-600;
+        }
+
+    }
+
+    &__hint {
+        position: absolute;
+        top: 20px;
+        left: 23px;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        opacity: 0.5;
+        pointer-events: none;
+        transition: top 0.5s, opacity 0.5s, font-size 0.5s;
+
+        &.active {
+            top: 5px;
+            font-size: 13px;
+            font-weight: 400;
+            opacity: 1;
+        }
+    }
+}
+
 @media(max-width: 992px) {
     .logo {
         &__img {

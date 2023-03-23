@@ -15,12 +15,12 @@ const swiper = new Swiper('.card-product__slider', {
 
 });
 
-const fieldAdvice = document.querySelectorAll('.form-advice__field');
+const fieldInput = document.querySelectorAll('.field__input');
 
-fieldAdvice.forEach(item => item.addEventListener('input', hint))
+fieldInput.forEach(item => item.addEventListener('input', hint))
 
 function hint() {
-    const textHint = this.parentElement.querySelector('.form-advice__hint');
+    const textHint = this.parentElement.querySelector('.field__hint');
     if (this.value.length > 0) {
         textHint.classList.add('active');
     } else {

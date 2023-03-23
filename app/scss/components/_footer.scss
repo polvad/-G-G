@@ -96,35 +96,13 @@
         }
     }
 
-    &__messager {
-        // position: absolute;
-        // top: 15px;
-        // right: 24px;
-        // display: flex;
-        // align-items: center;
-    }
-
     &__messager-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border: 1px solid #505050;
-        border-radius: 50%;
         background-color: $main-clr;
         margin-top: -5px;
-
-        &:hover {
-            .footer__messager-icon {
-                fill: $brown-100;
-            }
-        }
     }
 
     &__messager-icon {
         fill: $white;
-        transition: color 0.6s;
     }
 }
 
