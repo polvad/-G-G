@@ -1,0 +1,129 @@
+.catalog {
+    padding: 50px 0 90px;
+
+    .breadcramb {
+        margin-bottom: 20px;
+    }
+
+    &__inner {}
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    &__item {
+        max-width: 400px;
+        width: 100%;
+        min-height: 300px;
+
+        &:nth-child(4) {
+            max-width: calc(50% - 20px);
+        }
+
+        &:nth-child(5) {
+            max-width: calc(50% - 20px);
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+        height: 100%;
+        padding: 40px 30px;
+        background: linear-gradient(117.01deg, rgba(59, 57, 55, 0.75) 11.82%, rgba(59, 57, 55, 0.5625) 29.06%, rgba(59, 57, 55, 0) 62.34%), linear-gradient(0deg, rgba(59, 57, 55, 0.2), rgba(59, 57, 55, 0.2));
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.6s;
+
+        &:hover {
+            transform: scale(1.02);
+
+            .catalog__btn-link {
+                background-color: $brown-100;
+            }
+        }
+    }
+
+    &__sub-title {
+        max-width: 235px;
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: $white;
+    }
+
+    &__btn-link {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.6s;
+    }
+
+    &__icon {
+        stroke: $black;
+    }
+}
+
+
+
+@media(max-width: 1320px) {
+    .catalog {
+        &__list {
+            gap: 20px;
+        }
+
+        &__item {
+            max-width: calc(50% - 20px);
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .catalog {
+        &__item {
+            min-height: 260px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .catalog {
+        padding: 24px 0 60px;
+
+        &__list {
+            gap: 10px;
+        }
+
+        &__item {
+            max-width: 100%;
+
+            &:nth-child(4) {
+                max-width: 100%;
+            }
+
+            &:nth-child(5) {
+                max-width: 100%;
+            }
+        }
+
+        &__link {
+            padding: 27px 20px;
+        }
+    }
+}

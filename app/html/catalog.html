@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фабрика G&G | Страница каталога</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @include('./components/header.html',{})
+    <main class="main">
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog__inner">
+                    <div class="breadcramb">
+                        <ul class="breadcramb__list">
+                            <li class="breadcramb__item">
+                                <a class="breadcramb__link" href="./index.html">Главная</a>
+                            </li>
+                            <li class="breadcramb__item">Каталог</li>
+                        </ul>
+                    </div>
+                    <h2 class="catalog__title title">Каталог</h2>
+                    <ul class="catalog__list">
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#"
+                                style="background-image: url('../images/catalog/door.jpg');">
+                                <span class="catalog__sub-title">Межкомнатные двери</span>
+                                <div class="catalog__btn-link">
+                                    <svg class="catalog__icon" width="10" height="10">
+                                        <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#"
+                                style="background-image: url('../images/catalog/furniture.jpg');">
+                                <span class="catalog__sub-title">Мебель</span>
+                                <div class="catalog__btn-link">
+                                    <svg class="catalog__icon" width="10" height="10">
+                                        <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#"
+                                style="background-image: url('../images/catalog/panels.jpg');">
+                                <span class="catalog__sub-title">Стеновые панели «Буазери»</span>
+                                <div class="catalog__btn-link">
+                                    <svg class="catalog__icon" width="10" height="10">
+                                        <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#"
+                                style="background-image: url('../images/catalog/descent.jpg');">
+                                <span class="catalog__sub-title">Лестницы</span>
+                                <div class="catalog__btn-link">
+                                    <svg class="catalog__icon" width="10" height="10">
+                                        <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="catalog__item">
+                            <a class="catalog__link" href="#"
+                                style="background-image: url('../images/catalog/front.jpg');">
+                                <span class="catalog__sub-title">Мебельные фасады</span>
+                                <div class="catalog__btn-link">
+                                    <svg class="catalog__icon" width="10" height="10">
+                                        <use xlink:href="./images/sprite.svg#icon-arrow"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @include('./components/footer.html')
+
+    @include('./components/mobile-menu.html')
+    @include('./components/scripts.html')
+</body>
+
+</html>
