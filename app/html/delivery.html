@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фабрика G&G | Страница статьи</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @include('./components/header.html',{
+    "menu-link-delivery": "active"
+    })
+    <main class="main">
+
+        <section class="delivery">
+            <div class="container">
+                <div class="breadcramb">
+                    <ul class="breadcramb__list">
+                        <li class="breadcramb__item">
+                            <a class="breadcramb__link" href="./index.html">Главная</a>
+                        </li>
+                        <li class="breadcramb__item">Доставка и оплата</li>
+                    </ul>
+                </div>
+
+                <div class="delivery__inner">
+                    <h1 class="delivery__title title">Доставка и оплата</h1>
+                    <picture>
+                        <source srcset="./images/delivery-img.webp">
+                        <img class="delivery__img" src="./images/delivery-img.jpg" loading="lazy" alt="img">
+                    </picture>
+                    <p class="delivery__desc">
+                        Срок пошива комплекта – 10-15 рабочих дней. Доставка от 2-х дней, в зависимости от региона. Мы
+                        работаем с Boxberry, СDEK и Почтой России. Стоимость доставки зависит от региона и
+                        рассчитывается
+                        индивидуально.
+                    </p>
+                    <p class="delivery__pay">
+                        Вы можете выбрать несколько способов оплаты:
+                    </p>
+                    <ul class="delivery__list">
+                        <li class="delivery__item">
+                            наличными или кредитной картой курьеру (только для курьерской доставки, при условии
+                            предоплаты
+                            не менее 30% от суммы заказа);
+                        </li>
+                        <li class="delivery__item">
+                            кредитной картой на сайте;
+                        </li>
+
+                        <li class="delivery__item">
+                            банковским переводом.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    @include('./components/footer.html')
+
+    @include('./components/mobile-menu.html')
+    @include('./components/scripts.html')
+</body>
+
+</html>

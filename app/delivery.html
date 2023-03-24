@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Фабрика G&G | Страница контакты</title>
+    <title>Фабрика G&G | Страница статьи</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -22,7 +22,7 @@
                 </a>
                 <ul class="header__menu">
                     <li class="header__menu-item">
-                        <a class="header__menu-link @menu-link-delivery" href="./delivery.html">Доставка</a>
+                        <a class="header__menu-link active" href="./delivery.html">Доставка</a>
                     </li>
                     <li class="header__menu-item">
                         <a class="header__menu-link @menu-link-articles" href="./articles.html">Статьи</a>
@@ -31,7 +31,7 @@
                         <a class="header__menu-link @menu-link-about-company" href="./about-company.html">О нас</a>
                     </li>
                     <li class="header__menu-item">
-                        <a class="header__menu-link active" href="./contacts.html">Контакты</a>
+                        <a class="header__menu-link @menu-link-contact" href="./contacts.html">Контакты</a>
                     </li>
                 </ul>
             </nav>
@@ -51,7 +51,7 @@
                         <span class="sr-only">Open Menu</span>
                     </button>
                 </div>
-                <a class="header__catalog-link btn-brown btn-brown--active" href="./catalog.html">Каталог</a>
+                <a class="header__catalog-link btn-brown @outline" href="./catalog.html">Каталог</a>
             </div>
 
         </div>
@@ -59,110 +59,52 @@
 </header>
     <main class="main">
 
-        <section class="contacts">
+        <section class="delivery">
             <div class="container">
                 <div class="breadcramb">
                     <ul class="breadcramb__list">
                         <li class="breadcramb__item">
                             <a class="breadcramb__link" href="./index.html">Главная</a>
                         </li>
-                        <li class="breadcramb__item">Контакты</li>
+                        <li class="breadcramb__item">Доставка и оплата</li>
                     </ul>
                 </div>
 
-                <div class="contacts__inner">
-                    <div class="contacts__content">
-                        <h1 class="contacts__title title">Контакты</h1>
-                        <div class="contacts__wrap contacts-info">
-                            <div class="contacts-info__item">
-                                <address class="contacts-info__address">
-                                    <span class="contacts-info__title">Адрес:</span>
-                                    <p>м. Полежаевская</p>
-                                    <p>123154, г. Москва, пр-т. Маршала Жукова, д. 52, "Мебельный Центр"</p>
-                                </address>
-                            </div>
-                            <div class="contacts-info__item">
-                                <div class="contacts-info__work-schedule">
-                                    <span class="contacts-info__title">Режим работы:</span>
-                                    <p>ВТ - СБ 10:00 - 19:00 <br> ВС, ПН - Выходные</p>
-                                </div>
-                            </div>
-                            <div class="contacts-info__item">
-                                <div class="contacts-info__phone">
-                                    <span class="contacts-info__title">Телефон:</span>
-                                    <a class="contacts-info__link-tel" href="tel:89000000000">8 (900) 000-00-00</a>
-                                    <a class="contacts-info__link-tel" href="tel:89000000000">8 (900) 000-00-00</a>
-                                </div>
-                            </div>
-                            <div class="contacts-info__item">
-                                <div class="contacts-info__email">
-                                    <span class="contacts-info__title">Почта и социальные сети:</span>
-                                    <a class="contacts-info__link-email"
-                                        href="mailto:support@sofiadoors.com">support@sofiadoors.com</a>
-                                </div>
-                            </div>
-                            <div class="contacts-info__item">
-                                <div class="contacts-info__messager messager">
-                                    <a class="contacts-info__messager-link messager__link" href="#">
-                                        <svg class="contacts-info__messager-icon messager__icon" width="18" height="10">
-                                            <use xlink:href="./images/sprite.svg#icon-vk"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="contacts-info__messager-link messager__link" href="#">
-                                        <svg class="contacts-info__messager-icon messager__icon" width="19" height="19">
-                                            <use xlink:href="./images/sprite.svg#icon-pinterest"></use>
-                                        </svg>
-                                    </a>
-                                    <a class="contacts-info__messager-link messager__link" href="#">
-                                        <svg class="contacts-info__messager-icon messager__icon" width="20" height="18">
-                                            <use xlink:href="./images/sprite.svg#icon-telegram"></use>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="contacts__map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2243.8388344437967!2d37.46229431539223!3d55.77867089746474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTIzMTU0LCDQsy4g0JzQvtGB0LrQstCwLCDQv9GALdGCLiDQnNCw0YDRiNCw0LvQsCDQltGD0LrQvtCy0LAsINC0LiA1MiwgItCc0LXQsdC10LvRjNC90YvQuSDQptC10L3RgtGAIg!5e0!3m2!1sru!2sua!4v1679568236101!5m2!1sru!2sua"
-                            style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
+                <div class="delivery__inner">
+                    <h1 class="delivery__title title">Доставка и оплата</h1>
+                    <picture>
+                        <source srcset="./images/delivery-img.webp">
+                        <img class="delivery__img" src="./images/delivery-img.jpg" loading="lazy" alt="img">
+                    </picture>
+                    <p class="delivery__desc">
+                        Срок пошива комплекта – 10-15 рабочих дней. Доставка от 2-х дней, в зависимости от региона. Мы
+                        работаем с Boxberry, СDEK и Почтой России. Стоимость доставки зависит от региона и
+                        рассчитывается
+                        индивидуально.
+                    </p>
+                    <p class="delivery__pay">
+                        Вы можете выбрать несколько способов оплаты:
+                    </p>
+                    <ul class="delivery__list">
+                        <li class="delivery__item">
+                            наличными или кредитной картой курьеру (только для курьерской доставки, при условии
+                            предоплаты
+                            не менее 30% от суммы заказа);
+                        </li>
+                        <li class="delivery__item">
+                            кредитной картой на сайте;
+                        </li>
+
+                        <li class="delivery__item">
+                            банковским переводом.
+                        </li>
+                    </ul>
                 </div>
-                <section class="feedback">
-
-    <div class="feedback__inner">
-        <div class="feedback__content">
-            <h2 class="feedback__title title">Связаться с нами</h2>
-            <p class="feedback__text">
-                Наши специалисты с радостью помогут Вам, оставьте свой номер телефона!
-            </p>
-        </div>
-        <form class="form-feedback" action="#">
-            <div class="form-feedback__row">
-                <labe class="form-feedback__label field">
-                    <input class="form-feedback__input field__input" type="text">
-                    <span class="form-feedback__hint field__hint">Как вас зовут?</span>
-                </labe>
-                <labe class="form-feedback__label field">
-                    <input class="form-feedback__input field__input" type="tel">
-                    <span class="form-feedback__hint field__hint">Ваш телефон</span>
-                </labe>
-            </div>
-            <labe class="form-feedback__label field">
-                <textarea class="form-feedback__textarea field__input"></textarea>
-                <span class="form-feedback__hint field__hint">Ваш комментарий</span>
-            </labe>
-            <button class="form-feedback__btn btn-brown" type="submit">отправить сообщение</button>
-        </form>
-    </div>
-
-</section>
-
             </div>
         </section>
 
     </main>
+
     <footer class="footer">
     <div class="container">
         <div class="footer__inner">
@@ -221,6 +163,7 @@
         </div>
     </div>
 </footer>
+
     <div class="menu">
     <nav class="menu__items">
         <a class="menu__item" href="./delivery.html">Доставка</a>
