@@ -208,8 +208,36 @@
 
     &__slider {
         height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: $gray-100;
+
     }
+
+    &__range {
+        display: block;
+        height: 2px;
+        width: 85%;
+        background-color: $main-clr;
+
+
+    }
+}
+
+.noUi-horizontal .noUi-handle {
+    width: 18px;
+    height: 18px;
+    border: 2px solid $main-clr;
+    border-radius: 50%;
+    background-color: $white;
+    right: -10px;
+    top: -9px;
+}
+
+.noUi-handle:after,
+.noUi-handle:before {
+    display: none;
 }
 
 .filter-form {
@@ -292,6 +320,8 @@
         }
     }
 }
+
+
 
 .mobile-controls {
     display: flex;

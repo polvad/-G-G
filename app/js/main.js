@@ -94,7 +94,42 @@ function showBody() {
 // Slider price ----------------------
 const priceMin = document.querySelector('.filter-price__field-min');
 const priceMax = document.querySelector('.filter-price__field-max');
-const priceSlider = document.querySelector('.filter-price__slider');
+const priceSlider = document.querySelector('.filter-price__range');
+const inputs = [priceMin, priceMax];
+const clearFieldRange = document.querySelector('.filter-price__clear-btn');
+
+if (priceSlider) {
+    noUiSlider.create(priceSlider, {
+        start: [2200, 147500],
+        connect: true,
+        range: {
+            'min': [2200],
+            'max': [147500]
+        }
+    });
+
+    priceSlider.noUiSlider.on('update', function (values, handle) {
+        inputs[handle].value = Math.round(values[handle])
+    });
+
+    const setRangeSlider = (index, value) => {
+        let arr = [null, null];
+        arr[index] = value;
+
+        priceSlider.noUiSlider.set(arr)
+    }
+
+    inputs.forEach((el, index) => {
+        el.addEventListener('change', (e) => {
+            setRangeSlider(index, e.currentTarget.value)
+        })
+    })
+
+    clearFieldRange.addEventListener('click', function () {
+        priceMin.value = 2200
+        priceMax.value = 147500
+    })
+}
 
 // Select category ----------------
 const btnCategory = document.querySelector('.category__btn');
