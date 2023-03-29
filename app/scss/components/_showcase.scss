@@ -37,6 +37,9 @@
 }
 
 .card-product {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     padding: 20px;
     border: 1px solid $gray-400;
     transition: border 0.5s;
@@ -87,27 +90,17 @@
         }
     }
 
-
-    &__slider {
-        margin-bottom: 23px;
-    }
-
     &__img {
         display: block;
-        margin: 0 auto;
         object-fit: cover;
+        margin: 0 auto 30px;
     }
 
     &__row {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-
-    &__slider-dots {
-        .swiper-pagination-bullet-active {
-            background-color: $main-clr;
-        }
+        margin-top: auto;
     }
 
     &__btn {

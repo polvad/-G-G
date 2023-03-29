@@ -18,16 +18,6 @@ menuBtn.addEventListener('click', function () {
     mobileMenu.classList.toggle('show');
 });
 
-// Slider ----------------------
-const swiper = new Swiper('.card-product__slider', {
-    loop: true,
-    pagination: {
-        el: '.card-product__slider-dots',
-    },
-
-});
-
-
 // input --------------------------
 const fieldInput = document.querySelectorAll('.field__input');
 fieldInput.forEach(item => item.addEventListener('input', hint))
