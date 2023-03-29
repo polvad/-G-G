@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фабрика G&G | Страница мебели</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @include('./components/header.html',{})
+    <main class="main">
+        <section class="doors">
+            <div class="container">
+                <div class="breadcramb">
+                    <ul class="breadcramb__list">
+                        <li class="breadcramb__item">
+                            <a class="breadcramb__link" href="./index.html">Главная</a>
+                        </li>
+                        <li class="breadcramb__item">
+                            <a class="breadcramb__link" href="./catalog.html">Каталог</a>
+                        </li>
+                        <li class="breadcramb__item">Мебель</li>
+                    </ul>
+                </div>
+
+                <h1 class="doors__title title">Мебель</h1>
+
+                <div class="doors__inner">
+                    <div class="doors__left">
+
+                        <div class="mobile-controls">
+                            <div class="category">
+                                <button class="category__btn" type="button">
+                                    <span class="category__btn-text">Мебель</span>
+                                    <svg class="category__btn-icon" width="15" height="10">
+                                        <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                    </svg>
+                                </button>
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <a class="category__link " href="#">Межкомнатные двери</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a class="category__link active" href="#">Мебель</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a class="category__link" href="#">Стеновые панели «Буазери»</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a class="category__link" href="#">Лестницы</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a class="category__link" href="#">Мебельные фасады</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="filter-btn">
+                                <span class="sr-only">Open filter</span>
+                                <svg class="filter-btn__icon" width="22" height="18">
+                                    <use xlink:href="./images/sprite.svg#icon-filter"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="filter">
+                            <div class="filter__header">
+                                <button class="filter__btn-hide" type="button">
+                                    <span class="sr-only">Close filter</span>
+                                    <svg class="filter__btn-hide-icon" width="15" height="10">
+                                        <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                    </svg>
+                                </button>
+                                <span class="filter__header-text">
+                                    Фильтровать
+                                </span>
+                            </div>
+                            <div class="filter__item filter-price">
+                                <h3 class="filter__title">Ценовой диапазон</h3>
+                                <div class="filter-price__row">
+                                    <div class="filter-price__row-left">
+                                        <span class="filter-price__row-text">Выбрано</span>
+                                        <input class="filter-price__field-value filter-price__field-min" type="number">
+                                    </div>
+                                    <div class="filter-price__row-right">
+                                        <button class="filter-price__clear-btn" type="button">очистить</button>
+                                        <input class="filter-price__field-value filter-price__field-max" type="number">
+                                    </div>
+                                </div>
+                                <div class="filter-price__slider">
+                                    <span class="filter-price__range"></span>
+                                </div>
+                            </div>
+
+                            <form class="filter-form">
+                                <ul class="filter-form__list">
+
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__title filter__title" type="button">
+                                            Тип мебели
+                                            <svg class="filter__title-arrow" width="15" height="10">
+                                                <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter-form__body">
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Диваны и кресла</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Кровати и матрасы</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Шкафы и стеллажи</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Комоды и тумбы</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Столы и стулья</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Ковры и текстиль</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Освещение</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__title filter__title" type="button">
+                                            Стиль
+                                            <svg class="filter__title-arrow" width="15" height="10">
+                                                <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter-form__body">
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Скандинавский</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Винтаж</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Современный</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="filter-form__reset-btn" type="reset">Сбросить фильтры</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="doors__right">
+                        <ul class="doors__list-product">
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Диван прямой Дрезден</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">39 990 ₽</span>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/drezden.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/drezden.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Кресло Манго розовый</h3>
+                                    <div class="card-product__price">
+                                        <ins class="card-product__new-price">24 990 ₽</ins>
+                                        <del class="card-product__old-price">40 500 ₽</del>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/mango.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/mango.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Кресло Рон синий</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">19 990 ₽</span>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/ron-blue.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/ron-blue.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Пуф-столик с ящиком Хюгге S рогожка бежевый</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">6 490 ₽</span>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/huge.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/huge.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Стол Clyde 110-168*75 бетон/белый</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">10 990 ₽</span>
+                                    </div>
+
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/clyde.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/clyde.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Стол обеденный Дакота белый мрамор ножки хром</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">17 990 ₽</span>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/dacota.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/dacota.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Стул полубарный Матео с кантом велюр светло-серый
+                                    </h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">9 090 ₽</span>
+                                    </div>
+
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/mateo.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/mateo.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Стол обеденный Ливерпуль белый мрамор</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/liverpul.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/liverpul.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Кресло TopChairs City</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">11 990 ₽</span>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/topChairs.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/topChairs.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Стул Логан велюр пыльно-розовый</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">6 990 ₽</span>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/logan.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/logan.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Кресло офисное TopChairs</h3>
+                                    <div class="card-product__price">
+                                        <ins class="card-product__new-price">8 790 ₽</ins>
+                                        <del class="card-product__old-price">34 500 ₽</del>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/topChairs2.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/topChairs2.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Стул Style DSW</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">1 990 ₽</span>
+                                    </div>
+                                    <picture>
+                                        <source srcset="./images/product/furniture/webp/dsw.webp">
+                                        <img class="card-product__img" src="./images/product/furniture/dsw.png"
+                                            width="240" height="240" loading="lazy" alt="img">
+                                    </picture>
+                                    <div class="card-product__row">
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">6</a></li>
+                                <li class="pagination__item">...</li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">23</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            @include('./components/advice.html');
+        </section>
+
+
+    </main>
+
+    @include('./components/footer.html')
+
+    @include('./components/mobile-menu.html')
+    @include('./components/scripts.html')
+</body>
+
+</html>
