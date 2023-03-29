@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фабрика G&G | Страница Межкомнатные двери</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <nav class="header__left">
+                <a class="header__logo logo" href="./index.html">
+                    <span class="sr-only">логотип фабрики, нажав на который можно перейти на главную страницу</span>
+                    <svg class="logo__img" width="106" height="60">
+                        <use xlink:href="./images/sprite.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <ul class="header__menu">
+                    <li class="header__menu-item">
+                        <a class="header__menu-link @menu-link-delivery" href="./delivery.html">Доставка</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link @menu-link-articles" href="./articles.html">Статьи</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link @menu-link-about-company" href="./about-company.html">О нас</a>
+                    </li>
+                    <li class="header__menu-item">
+                        <a class="header__menu-link @menu-link-contact" href="./contacts.html">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__right">
+                <div class="header__contact">
+                    <a class="header__email link-contact"
+                        href="mailto:support@sofiadoors.com">support@sofiadoors.com</a>
+                    <a class="header__tel link-contact" href="tel:88005508179">
+                        <span class="sr-only">Call us back button</span>
+                        <span class="header__tel-num">8 (800) 550-81-79</span>
+                        <svg class="header__tel-icon" width="18" height="18">
+                            <use xlink:href="./images/sprite.svg#icon-tel"></use>
+                        </svg>
+                    </a>
+                    <button class="header__burger-btn" type="button">
+                        <span class="sr-only">Open Menu</span>
+                    </button>
+                </div>
+                <a class="header__catalog-link btn-brown @outline" href="./catalog.html">Каталог</a>
+            </div>
+
+        </div>
+    </div>
+</header>
+    <main class="main">
+        <section class="doors">
+            <div class="container">
+                <div class="breadcramb">
+                    <ul class="breadcramb__list">
+                        <li class="breadcramb__item">
+                            <a class="breadcramb__link" href="./index.html">Главная</a>
+                        </li>
+                        <li class="breadcramb__item">
+                            <a class="breadcramb__link" href="./catalog.html">Каталог</a>
+                        </li>
+                        <li class="breadcramb__item">Межкомнатные двери</li>
+                    </ul>
+                </div>
+
+                <h1 class="doors__title title">Межкомнатные двери</h1>
+
+                <div class="doors__inner">
+                    <div class="doors__left">
+
+                        <div class="mobile-controls">
+                            <div class="category">
+                                <button class="category__btn" type="button">
+                                    <span class="category__btn-text">Межкомнатные двери</span>
+                                    <svg class="category__btn-icon" width="15" height="10">
+                                        <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                    </svg>
+                                </button>
+                                <ul class="category__list">
+                                    <li class="category__item">
+                                        <a class="category__link active" href="#">Межкомнатные двери</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a class="category__link" href="#">Мебель</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a class="category__link" href="#">Стеновые панели «Буазери»</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a class="category__link" href="#">Лестницы</a>
+                                    </li>
+                                    <li class="category__item">
+                                        <a class="category__link" href="#">Мебельные фасады</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="filter-btn">
+                                <span class="sr-only">Open filter</span>
+                                <svg class="filter-btn__icon" width="22" height="18">
+                                    <use xlink:href="./images/sprite.svg#icon-filter"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="filter">
+                            <div class="filter__header">
+                                <button class="filter__btn-hide" type="button">
+                                    <span class="sr-only">Close filter</span>
+                                    <svg class="filter__btn-hide-icon" width="15" height="10">
+                                        <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                    </svg>
+                                </button>
+                                <span class="filter__header-text">
+                                    Фильтровать
+                                </span>
+                            </div>
+                            <div class="filter__item filter-price">
+                                <h3 class="filter__title">Ценовой диапазон</h3>
+                                <div class="filter-price__row">
+                                    <div class="filter-price__row-left">
+                                        <span class="filter-price__row-text">Выбрано</span>
+                                        <input class="filter-price__field-value filter-price__field-min" type="number">
+                                    </div>
+                                    <div class="filter-price__row-right">
+                                        <button class="filter-price__clear-btn" type="button">очистить</button>
+                                        <input class="filter-price__field-value filter-price__field-max" type="number">
+                                    </div>
+                                </div>
+                                <div class="filter-price__slider"></div>
+                            </div>
+
+                            <form class="filter-form">
+                                <ul class="filter-form__list">
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__title filter__title" type="button">
+                                            Тип дверей
+                                            <svg class="filter__title-arrow" width="15" height="10">
+                                                <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter-form__body">
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Межкомнатные</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Скрытые</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__title filter__title" type="button">
+                                            Стиль
+                                            <svg class="filter__title-arrow" width="15" height="10">
+                                                <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter-form__body">
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Скандинавский</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Винтаж</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Современный</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__title filter__title" type="button">
+                                            Материал
+                                            <svg class="filter__title-arrow" width="15" height="10">
+                                                <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter-form__body">
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Эмаль</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Монохромный Кортекс</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Шёлк</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Кортекс</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Шпон</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__title filter__title" type="button">
+                                            Покрытие
+                                            <svg class="filter__title-arrow" width="15" height="10">
+                                                <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter-form__body">
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Матовые</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Глянцевые</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Под покраску</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+
+                                        </div>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__title filter__title" type="button">
+                                            Тип конструкции
+                                            <svg class="filter__title-arrow" width="15" height="10">
+                                                <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter-form__body">
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Рамочные</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Филёнчатые</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Щитовые</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Остеклённые</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Глухие</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Арочные</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Радиусные</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Автоматические</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Противовзломные</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+
+                                        </div>
+                                    </li>
+                                    <li class="filter-form__item">
+                                        <button class="filter-form__title filter__title" type="button">
+                                            Облицовки
+                                            <svg class="filter__title-arrow" width="15" height="10">
+                                                <use xlink:href="./images/sprite.svg#icon-arrowUp"></use>
+                                            </svg>
+                                        </button>
+                                        <div class="filter-form__body">
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Ваниль</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Белый Клен</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Тополь</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                            <label class="filter-form__label">
+                                                <span class="filter-form__text-category">Белый матовый</span>
+                                                <input class="filter-form__input sr-only" type="checkbox">
+                                                <span class="filter-form__select-box"></span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <button class="filter-form__reset-btn" type="reset">Сбросить фильтры</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="doors__right">
+                        <ul class="doors__list-product">
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">Sofia Original 50.07</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper" id="one">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/sofia_50-07.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/sofia_50-07.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/sofia_50-07.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/sofia_50-07.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">VISION Модель 64.43</h3>
+                                    <div class="card-product__price">
+                                        <ins class="card-product__new-price">24 500 ₽</ins>
+                                        <del class="card-product__old-price">34 500 ₽</del>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/vision_64-43.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/vision_64-43.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/vision_64-43.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/vision_64-43.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">VISION Модель 64.44</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/vision_64-44.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/vision_64-44.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/vision_64-44.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/vision_64-44.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">SKYLINE Модель 55.21</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/skyline_55-21.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/skyline_55-21.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/skyline_55-21.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/skyline_55-21.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">SKYLINE Модель 55.23</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/skyline_55-23.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/skyline_55-23.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/skyline_55-23.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/skyline_55-23.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">VISION Модель 64.44</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/vision_64-45.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/vision_64-45.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/vision_64-45.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/vision_64-45.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">CLASSIC Модель 65.44</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/classic_65-44.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/classic_65-44.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/classic_65-44.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/classic_65-44.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">CLASSIC Модель 64.22</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/classic_64-22.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/classic_64-22.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/classic_64-22.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/classic_64-22.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">METAMORFOSA Модель 65.171</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/metamorfoza_65-171.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/metamorfoza_65-171.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/metamorfoza_65-171.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/metamorfoza_65-171.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">VISION Модель 64.44</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/vision_64-44.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/vision_64-44.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/vision_64-44.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/vision_64-44.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">SKYLINE Модель 55.21</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/skyline_55-21.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/skyline_55-21.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/skyline_55-21.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/skyline_55-21.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="doors__item-product">
+                                <article class="card-product">
+                                    <h3 class="card-product__title">SKYLINE Модель 55.23</h3>
+                                    <div class="card-product__price">
+                                        <span class="card-product__current-price">24 500 ₽</span>
+                                    </div>
+
+                                    <div class="card-product__slider swiper">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/skyline_55-23.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/skyline_55-23.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <picture>
+                                                    <source srcset="./images/product/door/webp/skyline_55-23.webp">
+                                                    <img class="card-product__img"
+                                                        src="./images/product/door/skyline_55-23.png" width="240"
+                                                        height="240" loading="lazy" alt="img">
+                                                </picture>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card-product__row">
+                                        <div class="card-product__slider-dots"></div>
+                                        <button class="card-product__btn" type="button">купить</button>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <ul class="pagination__list">
+                                <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">6</a></li>
+                                <li class="pagination__item">...</li>
+                                <li class="pagination__item"><a class="pagination__link" href="#">23</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="advice">
+    <div class="container">
+        <div class="advice__inner">
+            <picture>
+                <source srcset="./images/advice-img.webp">
+                <img class="advice__img" src="./images/advice-img.jpg" width="640" height="600" loading="lazy"
+                    alt="img">
+            </picture>
+            <div class="advice__content">
+                <h2 class="advice__title title">Нужна помощь с выбором?</h2>
+                <p class="advice__text">Наши специалисты с радостью помогут Вам, оставьте свой номер телефона!</p>
+                <form class="form-advice" action="#">
+                    <div class="form-advice__row">
+                        <label class="form-advice__label field">
+                            <input class="form-advice__field field__input" type="text" required>
+                            <span class="form-advice__hint field__hint">Как вас зовут?</span>
+                        </label>
+                        <label class="form-advice__label field">
+                            <input class="form-advice__field field__input" type="tel" required>
+                            <span class="form-advice__hint field__hint">Ваш телефон</span>
+                        </label>
+                    </div>
+                    <button class="form-advice__btn btn-brown" type="submit">Связаться с нами</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>;
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__heading">
+                <a class="footer__logo logo" href="./index.html">
+                    <span class="sr-only">логотип фабрики, нажав на который можно перейти на главную страницу</span>
+                    <svg class="logo__img" width="90" height="51">
+                        <use xlink:href="./images/sprite.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <span class="footer__heading-text">Фабрика G&G. 2022</span>
+                <span class="footer__heading-text">© Все права защищены</span>
+            </div>
+            <div class="footer__body">
+                <div class="footer__contacts">
+                    <a class="footer__link-tel" href="tel:88005508179">8 (800) 550-81-79</a>
+                    <address class="footer__address">
+                        <span class="footer__text">м. Полежаевская</span>
+                        <span class="footer__text">123154, г. Москва, пр-т. Маршала Жукова, д. 52, "Мебельный
+                            Центр"</span>
+                    </address>
+                    <a class="footer__link-email" href="mailto:support@sofiadoors.com">support@sofiadoors.com</a>
+                </div>
+                <nav class="footer__nav">
+                    <a class="footer__link" href="#">Межкомнатные двери</a>
+                    <a class="footer__link" href="#">Мебель</a>
+                    <a class="footer__link" href="#">Стеновые панели «Буазери»</a>
+                    <a class="footer__link" href="#">Лестницы</a>
+                    <a class="footer__link" href="#">Мебельные фасады</a>
+                    <a class="footer__link" href="./delivery.html">Доставка</a>
+                    <a class="footer__link" href="./articles.html">Статьи</a>
+                    <a class="footer__link" href="./about-company.html">О нас</a>
+                    <a class="footer__link" href="./contacts.html">Контакты</a>
+                    <a class="footer__link" href="#">Политика конфиденциальности</a>
+                </nav>
+
+                <div class="footer__messager messager">
+                    <a class="footer__messager-link messager__link" href="#">
+                        <svg class="footer__messager-icon messager__icon" width="18" height="10">
+                            <use xlink:href="./images/sprite.svg#icon-vk"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__messager-link messager__link" href="#">
+                        <svg class="footer__messager-icon messager__icon" width="19" height="19">
+                            <use xlink:href="./images/sprite.svg#icon-pinterest"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__messager-link messager__link" href="#">
+                        <svg class="footer__messager-icon messager__icon" width="20" height="18">
+                            <use xlink:href="./images/sprite.svg#icon-telegram"></use>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <div class="menu">
+    <nav class="menu__items">
+        <a class="menu__item" href="./delivery.html">Доставка</a>
+        <a class="menu__item" href="./articles.html">Статьи </a>
+        <a class="menu__item" href="./about-company.html">О нас</a>
+        <a class="menu__item" href="./contacts.html">Контакты</a>
+    </nav>
+    <div class="menu__contacts">
+        <a class="menu__tel link-contact" href="tel:88005508179">8 (800) 550-81-79</a>
+        <a class="menu__email link-contact" href="mailto:support@sofiadoors.com">support@sofiadoors.com</a>
+    </div>
+</div>
+    <script src="./js/main.min.js"></script>
+</body>
+
+</html>

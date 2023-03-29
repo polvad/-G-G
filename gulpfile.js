@@ -46,6 +46,7 @@ function styles() {
 
 function scripts() {
   return src([
+    './node_modules/nouislider/dist/nouislider.min.js',
     './node_modules/swiper/swiper-bundle.min.js',
     'app/js/main.js'
   ])

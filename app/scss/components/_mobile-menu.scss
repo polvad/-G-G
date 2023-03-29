@@ -9,6 +9,7 @@
     background-position: center;
     padding: 140px 0 90px;
     transition: top 1s ease;
+    z-index: 9;
 
     &__items {
         display: flex;

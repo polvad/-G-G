@@ -72,6 +72,7 @@
                 </div>
                 <a class="hero__link btn-brown" href="#">подробнее</a>
             </div>
+            
         </div>
     </div>
 </section>
@@ -624,8 +625,6 @@
         <a class="new-articles__btn-all btn-stroke" href="#" target="_blank">Все статьи</a>
     </div>
 </section>
-
-
     </main>
 
     <footer class="footer">
@@ -687,6 +686,60 @@
     </div>
 </footer>
 
+    <div class="modal hidden" data-modal id="order">
+    <div class="modal__container">
+        <div class="modal__content order-modal">
+            <button class="modal__close" type="button">
+                <span class="sr-only">Close modal</span>
+            </button>
+            <h2 class="order-modal__title title">Заказ товара</h2>
+            <div class="order-modal__item item-order">
+                <img class="item-order__img" src="./images/product.jpg" width="70" height="70" alt="img">
+                <strong class="item-order__title">Журнальный столик Вальд черный</strong>
+                <span class="item-order__value">x1</span>
+                <span class="item-order__price">44 720 ₽</span>
+            </div>
+            <p class="order-modal__text">
+                Оставьте свой номер телефона! Мы свяжемся с Вами по поводу товара в течение 15 минут.
+            </p>
+            <form class="order-modal__form">
+                <label class="order-modal__label field">
+                    <input class="order-modal__input field__input" type="text">
+                    <span class="order-modal__hint field__hint">Как вас зовут?</span>
+                </label>
+                <label class="order-modal__label field">
+                    <input class="order-modal__input field__input" type="tel">
+                    <span class="order-modal__hint field__hint">Ваш телефон</span>
+                </label>
+                <button class="order-modal__btn btn-brown" type="submit">Заказать товар</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <div class="modal hidden" data-modal id="feedback">
+    <div class="modal__container">
+        <div class="modal__content feedback-modal">
+            <h2 class="feedback-modal__title title">Связаться с нами</h2>
+            <p class="feedback-modal__text">
+                Наши специалисты с радостью помогут Вам, оставьте свой номер телефона!
+            </p>
+            <form class="feedback-modal__form">
+                <label class="feedback-modal__label field">
+                    <input class="feedback-modal__input field__input" type="text">
+                    <span class="feedback-modal__hint field__hint">Как вас зовут?</span>
+                </label>
+                <label class="feedback-modal__label field">
+                    <input class="feedback-modal__input field__input" type="tel">
+                    <span class="feedback-modal__hint field__hint">Ваш телефон</span>
+                </label>
+                <button class="feedback-modal__btn btn-brown" type="submit">Связаться с нами</button>
+            </form>
+        </div>
+        <button class="modal__close" type="button">
+            <span class="sr-only">Close modal</span>
+        </button>
+    </div>
+</div>
     <div class="menu">
     <nav class="menu__items">
         <a class="menu__item" href="./delivery.html">Доставка</a>
