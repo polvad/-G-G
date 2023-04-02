@@ -124,8 +124,9 @@ if (priceSlider) {
 // Select category ----------------
 const btnCategory = document.querySelector('.category__btn');
 const selectList = document.querySelector('.category__list');
-
-btnCategory.addEventListener('click', showSelect);
+if (btnCategory) {
+    btnCategory.addEventListener('click', showSelect);
+}
 
 function showSelect() {
     this.classList.toggle('rotate')
@@ -145,15 +146,60 @@ function selectValue(e) {
 // Mobile filter -------------------------------
 const filter = document.querySelector('.filter');
 const openFilter = document.querySelector('.filter-btn');
-
-openFilter.addEventListener('click', () => {
-    filter.classList.add('open');
-    offScroll();
-})
+if (filter) {
+    openFilter.addEventListener('click', () => {
+        filter.classList.add('open');
+        offScroll();
+    })
+}
 
 const closeFilter = document.querySelector('.filter__btn-hide');
+if (closeFilter) {
+    closeFilter.addEventListener("click", () => {
+        filter.classList.remove('open');
+        offScroll();
+    })
+}
 
-closeFilter.addEventListener('click', () => {
-    filter.classList.remove('open');
-    offScroll();
+
+// Slider card --------------------------
+const bigSliderImg = document.querySelector('.card-slider__big-img');
+const minSliderImg = document.querySelectorAll('.card-slider__min-img');
+const minSliderItem = document.querySelectorAll('.card-slider__min-item');
+
+
+minSliderImg.forEach((item, index) => {
+
+    item.addEventListener('click', function () {
+        minSliderItem.forEach(el => el.classList.remove('active'))
+        const li = this.parentElement;
+        li.classList.add('active');
+        bigSliderImg.src = this.src
+
+    })
 })
+
+minSliderItem[0].classList.add('active');
+bigSliderImg.src = minSliderImg[0].src
+
+// sliderBtnPrev.addEventListener('click', function () {
+//     minSliderItem.forEach((item, index) => {
+//         item.classList.remove('active')
+//         if (index == count) {
+//             item.classList.add('active')
+//             const img = item.querySelector('img').src;
+//             bigSliderImg.src = img
+//         }
+//     })
+// })
+
+// sliderBtnNext.addEventListener('click', function () {
+
+//     minSliderItem.forEach((item, index) => {
+//         item.classList.add('active')
+//         const img = item.querySelector('img').src;
+//         bigSliderImg.src = img
+
+//     })
+// })
+

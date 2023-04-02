@@ -1,0 +1,371 @@
+.card-page {
+    padding: 50px 0 90px;
+
+    .breadcramb {
+        margin-bottom: 20px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    &__left {
+        max-width: 510px;
+        width: 100%;
+    }
+
+    &__right {
+        max-width: 700px;
+        width: 100%;
+    }
+
+    &__art {
+        display: block;
+        font-size: 12px;
+        color: $gray-400;
+        margin-bottom: 23px;
+    }
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 60px;
+        row-gap: 15px;
+        padding-bottom: 35px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid $gray-400;
+    }
+
+    &__price-value {
+        font-size: 64px;
+        font-weight: 500;
+        line-height: 1;
+    }
+
+    &__price-inner {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__btn-order {
+        padding: 20px 80px;
+    }
+
+    &__desc {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid $gray-400;
+    }
+
+    &__title-desc,
+    &__characteristic-title {
+        font-family: $font-title;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+
+    &__characteristic-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        row-gap: 10px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $gray-400;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.01em;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &__characteristic-value {
+        max-width: 340px;
+        width: 100%;
+        text-transform: none;
+    }
+
+}
+
+.card-slider {
+
+    &__inner {
+        max-width: 510px;
+        width: 100%;
+    }
+
+    &__big {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    &__big-item {
+        width: 100%;
+        height: 540px;
+        border: 1px solid $gray-400;
+    }
+
+    &__big-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__min {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        overflow-x: auto;
+    }
+
+    &__min-item {
+        flex-shrink: 0;
+        width: 90px;
+        height: 110px;
+        overflow: hidden;
+        border: 1px solid $gray-400;
+
+        &.active {
+            border: 1px solid $main-clr;
+        }
+    }
+
+    &__min-img {
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+.form-card-page {
+    margin-bottom: 70px;
+
+    &__grup {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 7px;
+        border: none;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__grup--btns {
+        gap: 0;
+        flex-wrap: nowrap;
+    }
+
+    &__title-grup {
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        margin-bottom: 7px;
+    }
+
+    &__input:checked+.form-card-page__circel {
+        border: 2px solid $main-clr;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: $main-clr;
+            background-image: url('../images/icons/icon-checked.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+
+    &__input:checked+.form-card-page__btn-check {
+        border: 1px solid $main-clr;
+        font-weight: 700;
+    }
+
+    &__circel {
+        position: relative;
+        display: block;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        border: 1px solid $gray-400;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__btn-check {
+        display: block;
+    }
+}
+
+.counter {
+    width: 160px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border: 1px solid $gray-400;
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 100%;
+        font-size: 30px;
+
+        &:hover {
+            color: $brown-800;
+        }
+    }
+
+    &__field {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: 25px;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+}
+
+@media(max-width: 1300px) {
+    .form-card-page {
+        &__grup--btns {
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+
+    .card-page {
+        &__characteristic-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__characteristic-value {
+            max-width: 100%;
+            font-size: 16px;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .card-page {
+        &__inner {
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        &__left {
+            max-width: 100%;
+        }
+
+        &__right {
+            max-width: 100%;
+        }
+    }
+
+    .card-slider {
+        &__inner {
+            margin: 0 auto;
+        }
+    }
+
+    .form-card-page {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width: 768px) {
+    .card-page {
+        padding: 30px 0 60px;
+
+        &__art {
+            margin-bottom: 5px;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+
+        &__price-value {
+            font-size: 50px;
+        }
+
+        &__desc {
+            padding-bottom: 15px;
+        }
+
+        &__btn-order {
+            width: 100%;
+            padding: 15px 60px;
+        }
+
+        &__counter {
+            width: 100%;
+        }
+    }
+
+    .card-slider {
+        &__big-item {
+            height: 370px;
+        }
+
+        &__min {
+            gap: 5px;
+        }
+
+        &__min-item {
+            width: 66px;
+            height: 80px;
+        }
+    }
+
+    .form-card-page {
+
+        &__circel {
+            width: 40px;
+            height: 40px;
+        }
+
+        &__input:checked+.form-card-page__circel {
+            &::after {
+                bottom: -5px;
+            }
+        }
+
+        &__btn-check {
+            padding: 15px;
+
+        }
+    }
+}
