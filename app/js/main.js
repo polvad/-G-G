@@ -48,16 +48,16 @@ modalClose.forEach((item) => {
 function openModal() {
     const dataModal = this.dataset.modalBtn
     const modal = document.querySelector('#' + dataModal);
-    modal.addEventListener('click', function () {
-        modal.classList.add('hidden');
-    })
     modal.classList.remove('hidden')
 
     const containerModal = modal.querySelector('.modal__container');
     containerModal.addEventListener('click', function (e) {
+        modal.classList.add('hidden');
+    })
+    let contentModal = modal.querySelector('.modal__content');
+    contentModal.addEventListener('click', function(e){
         e.stopPropagation()
     })
-
 }
 
 function addHidden(e) {
@@ -167,8 +167,11 @@ const bigSliderImg = document.querySelector('.card-slider__big-img');
 const minSliderImg = document.querySelectorAll('.card-slider__min-img');
 const minSliderItem = document.querySelectorAll('.card-slider__min-item');
 
+minSliderItem[0].classList.add('active');
+bigSliderImg.src = minSliderImg[0].src
 
-minSliderImg.forEach((item, index) => {
+
+minSliderImg.forEach(item => {
 
     item.addEventListener('click', function () {
         minSliderItem.forEach(el => el.classList.remove('active'))
@@ -179,27 +182,23 @@ minSliderImg.forEach((item, index) => {
     })
 })
 
-minSliderItem[0].classList.add('active');
-bigSliderImg.src = minSliderImg[0].src
+// Counter --------------
+(function () {
+    const countBtnPlus = document.querySelector('.counter__btn--plus');
+    const countBtnMinus = document.querySelector('.counter__btn--minus');
+    const countField = document.querySelector('.counter__field');
 
-// sliderBtnPrev.addEventListener('click', function () {
-//     minSliderItem.forEach((item, index) => {
-//         item.classList.remove('active')
-//         if (index == count) {
-//             item.classList.add('active')
-//             const img = item.querySelector('img').src;
-//             bigSliderImg.src = img
-//         }
-//     })
-// })
+    let countNum = 1;
+    countField.value = countNum;
 
-// sliderBtnNext.addEventListener('click', function () {
+    countBtnMinus.addEventListener('click', function () {
+        if (countNum > 1) countNum--;
+        countField.value = countNum;
+    })
 
-//     minSliderItem.forEach((item, index) => {
-//         item.classList.add('active')
-//         const img = item.querySelector('img').src;
-//         bigSliderImg.src = img
+    countBtnPlus.addEventListener('click', function () {
+        countNum++;
+        countField.value = countNum;
+    })
 
-//     })
-// })
-
+}())
